@@ -5,6 +5,10 @@
     This code uses LAPACK to invert matrixes.
 
 
-    To install LAPACK on MACOS please go to: 
-[a](https://expertise.utep.edu/profiles/mrpederson)
-<a href='https://www.macports.org/install.php'> MacPorts </a>
+    To install LAPACK you will require to install macports
+[MacPorts](https://www.macports.org/install.php)
+    To install LAPACK go to:
+[LAPACK](https://ports.macports.org/port/lapack/)
+
+    To use a LAPACK subroutine, call it from your program, (defining it as an external first),
+    and add: '-llapack -lblas' to the end of your compilation command.
