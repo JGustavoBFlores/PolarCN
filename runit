@@ -1,0 +1,4 @@
+rm simulator
+make
+./simulator
+mv file* EVOLUTION/.
