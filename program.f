@@ -32,8 +32,7 @@ C   to be non-zero. This is the step to have the polar CN Matrixes.
 
       CALL ZGETRF(N,N,AM2,N,IPIV,INFO)
       CALL ZGETRI(N,AM2,N,IPIV,WORK,N,INFO)
-      PRINT*, AM2
-      PRINT*, AMX 
+C Test of the 
       DO I=1,N
       HOLD=0.0D0
       DO J=1,N
