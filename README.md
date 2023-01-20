@@ -14,3 +14,7 @@
 
     To use a LAPACK subroutine, call it from your program, (defining it as an external first),
     and add: '-llapack -lblas' to the end of your compilation command.
+
+    To run this code you can either run the simulator executable or runit, runit requires a directory 
+    of name EVOLUTION and will delete the current version of simulator and compile a newer version 
+    from the program.f 
