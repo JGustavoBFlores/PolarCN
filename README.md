@@ -4,4 +4,4 @@
 
     This code uses LAPACK to invert matrixes.
 
-    To install LAPACK on MACOS please go to: [MacPorts](https://www.macports.org/install.php)
+    To install LAPACK on MACOS please go to: https://www.macports.org/install.php
