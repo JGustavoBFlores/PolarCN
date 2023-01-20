@@ -4,6 +4,7 @@
 
     This code uses LAPACK to invert matrixes.
 
-<a href='https://expertise.utep.edu/profiles/mrpederson'> Dr. Mark Pederson</a>
 
-    To install LAPACK on MACOS please go to: <a href='https://www.macports.org/install.php'> MacPorts </a>
+    To install LAPACK on MACOS please go to: 
+[a](https://expertise.utep.edu/profiles/mrpederson)
+<a href='https://www.macports.org/install.php'> MacPorts </a>
