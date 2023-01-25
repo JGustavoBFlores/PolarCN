@@ -5,7 +5,7 @@
     Instead of using the regular Schrodinger equation, the atomic units variant will be used.
 
 <img src='https://latex.codecogs.com/svg.image?-\frac{\hbar^2}{2m}\nabla^2 \Psi + \hat{V}\Psi = i\hbar\frac{\partial}{\partial t}\Psi'/>
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+[\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
     This code uses LAPACK to invert matrixes.
 
