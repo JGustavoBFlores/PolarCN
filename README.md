@@ -6,7 +6,7 @@
 
     This code uses LAPACK to invert matrixes.
 
-    To install LAPACK you will require to install macports
+    To install LAPACK you will require to install macports:
 [MacPorts](https://www.macports.org/install.php)
 
     To install LAPACK go to:
