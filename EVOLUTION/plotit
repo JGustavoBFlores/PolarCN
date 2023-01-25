@@ -1,0 +1,12 @@
+set terminal gif animate delay 10
+set output "output.gif"
+set xrange [-1.5:1.5]
+set yrange [-1.5:1.5]
+set zrange [0:0.2]
+set ticslevel 0
+list = "`echo $(ls file*)`"
+do for [i in list] {
+splot i with lines title i
+reread
+}
+set output 
