@@ -4,7 +4,7 @@
 
     Instead of using the regular Schrodinger equation, the atomic units variant will be used.
 
-&nabla;h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+-&nabla;/&theta;(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 
     This code uses LAPACK to invert matrixes.
