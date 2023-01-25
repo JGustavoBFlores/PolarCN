@@ -52,7 +52,7 @@ C     STOP
 C     PRINT*, (AMX(1,J),J=1,3)
 C     STOP
 C To evolve |Psi> a unit of dT in time we must multiply it by C
-      DO K=1,1000 
+      DO K=1,1000
       PHI=0.0D0
       DO I=1,N
       DO J=1,N
@@ -67,7 +67,7 @@ C lets just save the probability density for now:
       OPEN(UNIT=20,FILE=NAME)
       DO I=1,N
       WRITE(20,*) COS((2*Pi)*I/N),SIN(I*(2*Pi)/N)
-     &,dble(PHI(I)*CONJG(PHI(I)))
+     &,dble(PHI(I)*CONJG*PHI(I))
       END DO
       CLOSE(20)
       IF(I.EQ.(I/10.0)*10)CALL SYSTEM('mv file* EVOLUTION/.')
@@ -83,8 +83,8 @@ C lets just save the probability density for now:
 C     PRINT*, dt,R,dX,dt/(R*dX)**2
       AMX=0.0D0
       
-      DO I=1,N
 C First we will define the diagonal elements
+      DO I=1,N
        AMX(I,I)=COMPLEX(2.0E0,2.0E0*dt/((r*dX)**2))
       END DO
 C Now the off diagonals:
@@ -112,15 +112,12 @@ C   |Psi>
       COMPLEX*16 PSI(N)
       PARAMETER(Pi=4*ATAN(1.0E0))
       PSI=(0.0E0,0.0E0)
-      PSI(1)=COMPLEX(1.0E0,0.0E0)
-C       DO I=1,90   
-C      PSI(I)=COMPLEX(COS((2*I*Pi/N)),0.0E0)
-C      IF(abs(dble(PSI(I))).LT.0.1E-10) PSI(I)=COMPLEX(0.0d0,0.0D0)
-C      END DO
-C      DO I=270,360
-C      PSI(I)=COMPLEX(COS((2*I*Pi/N)),0.0E0)
-C      IF(abs(dble(PSI(I))).LT.0.1E-10) PSI(I)=COMPLEX(0.0d0,0.0D0)
-C      END DO
+C     PSI(1)=COMPLEX(1.0E0,0.0E0)
+       DO I=1,360  
+       PSI(I)= 1.0E0/SQRT(2.0E0*Pi)*COMPLEX
+     &(COS((2*I*Pi/N))*EXP(-(0.5E0*((I-180)/20)**2))   
+     &,SIN((2*I*Pi/N))*EXP(-(0.5E0*((I-180)/20)**2)))
+       END DO
 
 C     PSI(1)=(0.0E0,1.0E0)
       OPEN(UNIT=10,FILE='PSI')
