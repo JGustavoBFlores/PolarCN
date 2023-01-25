@@ -4,7 +4,7 @@
 
     Instead of using the regular Schrodinger equation, the atomic units variant will be used.
 
--&nabla;/&theta;(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+<img src='https://latex.codecogs.com/svg.image?-\frac{\hbar^2}{2m}\nabla^2 \Psi + \hat{V}\Psi = i\hbar\frac{\partial}{\partial t}\Psi'/>
 
 
     This code uses LAPACK to invert matrixes.
